@@ -1,0 +1,29 @@
+// FinancialManagementSystem.idl : type library source for FinancialManagementSystem.exe
+
+// This file will be processed by the MIDL compiler to produce the
+// type library (FinancialManagementSystem.tlb).
+
+[ uuid(17022035-7C88-494C-9C6C-879FD70CCCA6), version(1.0) ]
+library FinancialManagementSystem
+{
+	importlib("stdole32.tlb");
+	importlib("stdole2.tlb");
+
+	//  Primary dispatch interface for CFinancialManagementSystemDoc
+	
+	[ uuid(BA18314A-6899-448D-ABEC-485ED137CEA5) ]
+	dispinterface IFinancialManagementSystem
+	{
+		properties:
+			
+		methods:
+	};
+
+	//  Class information for CFinancialManagementSystemDoc
+	
+	[ uuid(8A419812-8AD8-4A9B-AB86-751FF8F82A27) ]
+	coclass CFinancialManagementSystemDoc
+	{
+		[default] dispinterface IFinancialManagementSystem;
+	};
+};

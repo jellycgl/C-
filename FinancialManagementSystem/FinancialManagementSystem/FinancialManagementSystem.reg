@@ -1,0 +1,16 @@
+REGEDIT
+; This .REG file may be used by your SETUP program.
+;   If a SETUP program is not available, the entries below will be
+;   registered in your InitInstance automatically with a call to
+;   CWinApp::RegisterShellFileTypes and COleObjectFactory::UpdateRegistryAll.
+
+
+HKEY_CLASSES_ROOT\FinancialManagementSystem.Document = FinancialManagementSystem.Document
+
+
+HKEY_CLASSES_ROOT\FinancialManagementSystem.Document\CLSID = {8A419812-8AD8-4A9B-AB86-751FF8F82A27}
+
+HKEY_CLASSES_ROOT\CLSID\{8A419812-8AD8-4A9B-AB86-751FF8F82A27} = FinancialManagementSystem.Document
+HKEY_CLASSES_ROOT\CLSID\{8A419812-8AD8-4A9B-AB86-751FF8F82A27}\ProgId = FinancialManagementSystem.Document
+
+HKEY_CLASSES_ROOT\CLSID\{8A419812-8AD8-4A9B-AB86-751FF8F82A27}\LocalServer32 = FinancialManagementSystem.EXE

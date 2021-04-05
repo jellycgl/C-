@@ -1,0 +1,172 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{D9619810-F3AD-40D1-B9AA-C52294D4B74F}</ProjectGuid>
+    <RootNamespace>MediaPlayer</RootNamespace>
+    <Keyword>MFCProj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="DrawControl\CatListBox.h" />
+    <ClInclude Include="MediaEngine\wmpcdrom.h" />
+    <ClInclude Include="MediaEngine\wmpcdromcollection.h" />
+    <ClInclude Include="MediaEngine\wmpclosedcaption.h" />
+    <ClInclude Include="MediaEngine\wmpcontrols.h" />
+    <ClInclude Include="MediaEngine\wmpdvd.h" />
+    <ClInclude Include="MediaEngine\wmperror.h" />
+    <ClInclude Include="MediaEngine\wmperroritem.h" />
+    <ClInclude Include="MediaEngine\wmpmedia.h" />
+    <ClInclude Include="MediaEngine\wmpmediacollection.h" />
+    <ClInclude Include="MediaEngine\wmpnetwork.h" />
+    <ClInclude Include="MediaEngine\wmpplayer4.h" />
+    <ClInclude Include="MediaEngine\wmpplayerapplication.h" />
+    <ClInclude Include="MediaEngine\wmpplaylist.h" />
+    <ClInclude Include="MediaEngine\wmpplaylistarray.h" />
+    <ClInclude Include="MediaEngine\wmpplaylistcollection.h" />
+    <ClInclude Include="MediaEngine\wmpsettings.h" />
+    <ClInclude Include="MediaEngine\wmpstringcollection.h" />
+    <ClInclude Include="MediaPlayer.h" />
+    <ClInclude Include="MediaPlayerDlg.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="Tool.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="DrawControl\CatListBox.cpp" />
+    <ClCompile Include="MediaEngine\wmpcdrom.cpp" />
+    <ClCompile Include="MediaEngine\wmpcdromcollection.cpp" />
+    <ClCompile Include="MediaEngine\wmpclosedcaption.cpp" />
+    <ClCompile Include="MediaEngine\wmpcontrols.cpp" />
+    <ClCompile Include="MediaEngine\wmpdvd.cpp" />
+    <ClCompile Include="MediaEngine\wmperror.cpp" />
+    <ClCompile Include="MediaEngine\wmperroritem.cpp" />
+    <ClCompile Include="MediaEngine\wmpmedia.cpp" />
+    <ClCompile Include="MediaEngine\wmpmediacollection.cpp" />
+    <ClCompile Include="MediaEngine\wmpnetwork.cpp" />
+    <ClCompile Include="MediaEngine\wmpplayer4.cpp" />
+    <ClCompile Include="MediaEngine\wmpplayerapplication.cpp" />
+    <ClCompile Include="MediaEngine\wmpplaylist.cpp" />
+    <ClCompile Include="MediaEngine\wmpplaylistarray.cpp" />
+    <ClCompile Include="MediaEngine\wmpplaylistcollection.cpp" />
+    <ClCompile Include="MediaEngine\wmpsettings.cpp" />
+    <ClCompile Include="MediaEngine\wmpstringcollection.cpp" />
+    <ClCompile Include="MediaPlayer.cpp" />
+    <ClCompile Include="MediaPlayerDlg.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="MediaPlayer.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\MediaPlayer.rc2" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\MediaPlayer.ico" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties RESOURCE_FILE="MediaPlayer.rc" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>
