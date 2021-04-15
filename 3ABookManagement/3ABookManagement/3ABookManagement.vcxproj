@@ -186,8 +186,12 @@
     <ClInclude Include="3ABookManagement.h" />
     <ClInclude Include="3ABookManagementDoc.h" />
     <ClInclude Include="3ABookManagementView.h" />
+    <ClInclude Include="AuxiliaryDialog\LogInDlg.h" />
     <ClInclude Include="calendarbar.h" />
     <ClInclude Include="ChildFrm.h" />
+    <ClInclude Include="DataModel\Book.h" />
+    <ClInclude Include="DataModel\Member.h" />
+    <ClInclude Include="DataModel\User.h" />
     <ClInclude Include="MainFrm.h" />
     <ClInclude Include="Resource.h" />
     <ClInclude Include="stdafx.h" />
@@ -197,8 +201,12 @@
     <ClCompile Include="3ABookManagement.cpp" />
     <ClCompile Include="3ABookManagementDoc.cpp" />
     <ClCompile Include="3ABookManagementView.cpp" />
+    <ClCompile Include="AuxiliaryDialog\LogInDlg.cpp" />
     <ClCompile Include="calendarbar.cpp" />
     <ClCompile Include="ChildFrm.cpp" />
+    <ClCompile Include="DataModel\Book.cpp" />
+    <ClCompile Include="DataModel\Member.cpp" />
+    <ClCompile Include="DataModel\User.cpp" />
     <ClCompile Include="MainFrm.cpp" />
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>

@@ -22,6 +22,8 @@
 #include "3ABookManagementDoc.h"
 #include "3ABookManagementView.h"
 
+#include "AuxiliaryDialog/LoginDlg.h"
+
 #ifdef _DEBUG
 #define new DEBUG_NEW
 #endif
@@ -83,6 +85,14 @@ BOOL CMy3ABookManagementApp::InitInstance()
 
 	CWinAppEx::InitInstance();
 
+	CLogInDlg lgDialog;
+	if (lgDialog.DoModal())
+	{
+		if (lgDialog.GetLoginResult() == false)
+		{
+			return FALSE;
+		}
+	}
 
 	// Initialize OLE libraries
 	if (!AfxOleInit())

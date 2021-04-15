@@ -13,6 +13,15 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="AuxiliaryDialog">
+      <UniqueIdentifier>{db1bc630-e62f-4ca7-b10f-cf28814b481f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DataManager">
+      <UniqueIdentifier>{a267ceb0-fdcc-4054-b731-fc0e66fdc550}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DataModel">
+      <UniqueIdentifier>{cd81a16c-611b-4cd6-82e4-0e7037b5cd3a}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="3ABookManagement.h">
@@ -42,6 +51,18 @@
     <ClInclude Include="calendarbar.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="AuxiliaryDialog\LogInDlg.h">
+      <Filter>AuxiliaryDialog</Filter>
+    </ClInclude>
+    <ClInclude Include="DataModel\Book.h">
+      <Filter>DataModel</Filter>
+    </ClInclude>
+    <ClInclude Include="DataModel\Member.h">
+      <Filter>DataModel</Filter>
+    </ClInclude>
+    <ClInclude Include="DataModel\User.h">
+      <Filter>DataModel</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="3ABookManagement.cpp">
@@ -64,6 +85,18 @@
     </ClCompile>
     <ClCompile Include="calendarbar.cpp">
       <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AuxiliaryDialog\LogInDlg.cpp">
+      <Filter>AuxiliaryDialog</Filter>
+    </ClCompile>
+    <ClCompile Include="DataModel\Book.cpp">
+      <Filter>DataModel</Filter>
+    </ClCompile>
+    <ClCompile Include="DataModel\Member.cpp">
+      <Filter>DataModel</Filter>
+    </ClCompile>
+    <ClCompile Include="DataModel\User.cpp">
+      <Filter>DataModel</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
