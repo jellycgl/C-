@@ -189,6 +189,9 @@
     <ClInclude Include="AuxiliaryDialog\LogInDlg.h" />
     <ClInclude Include="calendarbar.h" />
     <ClInclude Include="ChildFrm.h" />
+    <ClInclude Include="DataManager\BookManager.h" />
+    <ClInclude Include="DataManager\MemberManager.h" />
+    <ClInclude Include="DataManager\UserManager.h" />
     <ClInclude Include="DataModel\Book.h" />
     <ClInclude Include="DataModel\Member.h" />
     <ClInclude Include="DataModel\User.h" />
@@ -204,6 +207,9 @@
     <ClCompile Include="AuxiliaryDialog\LogInDlg.cpp" />
     <ClCompile Include="calendarbar.cpp" />
     <ClCompile Include="ChildFrm.cpp" />
+    <ClCompile Include="DataManager\BookManager.cpp" />
+    <ClCompile Include="DataManager\MemberManager.cpp" />
+    <ClCompile Include="DataManager\UserManager.cpp" />
     <ClCompile Include="DataModel\Book.cpp" />
     <ClCompile Include="DataModel\Member.cpp" />
     <ClCompile Include="DataModel\User.cpp" />

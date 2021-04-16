@@ -2,6 +2,12 @@
 #include "UserManager.h"
 
 
+CUserManager & CUserManager::GetInstance()
+{
+	static CUserManager userManager;
+	return userManager;
+}
+
 CUserManager::CUserManager()
 {
 }

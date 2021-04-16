@@ -63,6 +63,15 @@
     <ClInclude Include="DataModel\User.h">
       <Filter>DataModel</Filter>
     </ClInclude>
+    <ClInclude Include="DataManager\BookManager.h">
+      <Filter>DataManager</Filter>
+    </ClInclude>
+    <ClInclude Include="DataManager\MemberManager.h">
+      <Filter>DataManager</Filter>
+    </ClInclude>
+    <ClInclude Include="DataManager\UserManager.h">
+      <Filter>DataManager</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="3ABookManagement.cpp">
@@ -97,6 +106,15 @@
     </ClCompile>
     <ClCompile Include="DataModel\User.cpp">
       <Filter>DataModel</Filter>
+    </ClCompile>
+    <ClCompile Include="DataManager\BookManager.cpp">
+      <Filter>DataManager</Filter>
+    </ClCompile>
+    <ClCompile Include="DataManager\MemberManager.cpp">
+      <Filter>DataManager</Filter>
+    </ClCompile>
+    <ClCompile Include="DataManager\UserManager.cpp">
+      <Filter>DataManager</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
