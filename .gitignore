@@ -34,3 +34,6 @@
 # VS
 *.VC.db
 *.VC.opendb
+
+/3ABookManagement/.vs/3ABookManagement/v15/Browse.VC.db
+/3ABookManagement/.vs/3ABookManagement/v15/.suo
