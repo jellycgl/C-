@@ -13,10 +13,22 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Test Files">
+      <UniqueIdentifier>{4db18838-614b-46d1-b1f0-194df81e230b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Test Function">
+      <UniqueIdentifier>{4e0d19e9-b7a2-48f8-b0e0-3228a12b1cb9}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="pch.h">
       <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TestedFiles\sqlite3.h">
+      <Filter>Test Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TestFunction\TestFunction.h">
+      <Filter>Test Function</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -25,6 +37,9 @@
     </ClCompile>
     <ClCompile Include="UnitTest.cpp">
       <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TestFunction\TestFunction.cpp">
+      <Filter>Test Function</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
