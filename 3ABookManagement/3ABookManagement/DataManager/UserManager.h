@@ -4,6 +4,7 @@
 #include <list>
 #include <string>
 
+#include "..\Common\Common.h"
 #include "..\DataModel\User.h"
 
 using namespace std;
@@ -21,4 +22,18 @@ private:
 	~CUserManager();
 	CUserManager(const CUserManager & userManager);
 	const CUserManager &operator=(const CUserManager & userManager);
+
+public:
+	Result LoadAllUsers();
+
+	Result AddUser(const CUser & user);
+
+	Result DelUser(int nUserID);
+
+	Result UpdateUser(int nUserID, const CUser & newInfo);
+
+	Result GetUser(int nUserID);
+
+private:
+	map<int, CUser> m_mapID2Users;
 };

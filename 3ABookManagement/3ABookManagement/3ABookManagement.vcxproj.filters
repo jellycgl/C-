@@ -22,6 +22,15 @@
     <Filter Include="DataModel">
       <UniqueIdentifier>{cd81a16c-611b-4cd6-82e4-0e7037b5cd3a}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Common">
+      <UniqueIdentifier>{61b829c6-b2e1-4bda-a7e2-431ab89aa304}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DataBase">
+      <UniqueIdentifier>{3f9802d3-c77b-4487-840f-9bd2223156cf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DataBase\SQLite">
+      <UniqueIdentifier>{70730e77-d13b-4e39-9836-5144c344750e}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="3ABookManagement.h">
@@ -72,6 +81,18 @@
     <ClInclude Include="DataManager\UserManager.h">
       <Filter>DataManager</Filter>
     </ClInclude>
+    <ClInclude Include="Common\Common.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="DataBase\SQLite\sqlite3.h">
+      <Filter>DataBase\SQLite</Filter>
+    </ClInclude>
+    <ClInclude Include="DataBase\SQLite\sqlite3ext.h">
+      <Filter>DataBase\SQLite</Filter>
+    </ClInclude>
+    <ClInclude Include="DataBase\SQLite\SQLOperator.h">
+      <Filter>DataBase\SQLite</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="3ABookManagement.cpp">
@@ -115,6 +136,12 @@
     </ClCompile>
     <ClCompile Include="DataManager\UserManager.cpp">
       <Filter>DataManager</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\Common.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="DataBase\SQLite\SQLOperator.cpp">
+      <Filter>DataBase\SQLite</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

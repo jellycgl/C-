@@ -16,3 +16,29 @@ CUserManager::CUserManager()
 CUserManager::~CUserManager()
 {
 }
+
+Result CUserManager::LoadAllUsers()
+{
+	Result result;
+	return result;
+}
+
+Result CUserManager::AddUser(const CUser & user)
+{
+	return Result();
+}
+
+Result CUserManager::DelUser(int nUserID)
+{
+	return Result();
+}
+
+Result CUserManager::UpdateUser(int nUserID, const CUser & newInfo)
+{
+	return Result();
+}
+
+Result CUserManager::GetUser(int nUserID)
+{
+	return Result();
+}

@@ -118,6 +118,7 @@
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
+      <AdditionalDependencies>$(OutDir)sqlite3.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
     <Midl>
       <MkTypLibCompatible>false</MkTypLibCompatible>
@@ -189,6 +190,10 @@
     <ClInclude Include="AuxiliaryDialog\LogInDlg.h" />
     <ClInclude Include="calendarbar.h" />
     <ClInclude Include="ChildFrm.h" />
+    <ClInclude Include="Common\Common.h" />
+    <ClInclude Include="DataBase\SQLite\sqlite3.h" />
+    <ClInclude Include="DataBase\SQLite\sqlite3ext.h" />
+    <ClInclude Include="DataBase\SQLite\SQLOperator.h" />
     <ClInclude Include="DataManager\BookManager.h" />
     <ClInclude Include="DataManager\MemberManager.h" />
     <ClInclude Include="DataManager\UserManager.h" />
@@ -207,6 +212,8 @@
     <ClCompile Include="AuxiliaryDialog\LogInDlg.cpp" />
     <ClCompile Include="calendarbar.cpp" />
     <ClCompile Include="ChildFrm.cpp" />
+    <ClCompile Include="Common\Common.cpp" />
+    <ClCompile Include="DataBase\SQLite\SQLOperator.cpp" />
     <ClCompile Include="DataManager\BookManager.cpp" />
     <ClCompile Include="DataManager\MemberManager.cpp" />
     <ClCompile Include="DataManager\UserManager.cpp" />
