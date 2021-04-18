@@ -87,10 +87,13 @@
     <ClInclude Include="DataBase\SQLite\sqlite3.h">
       <Filter>DataBase\SQLite</Filter>
     </ClInclude>
-    <ClInclude Include="DataBase\SQLite\sqlite3ext.h">
+    <ClInclude Include="DataBase\SQLite\SQLOperator.h">
       <Filter>DataBase\SQLite</Filter>
     </ClInclude>
-    <ClInclude Include="DataBase\SQLite\SQLOperator.h">
+    <ClInclude Include="DataModel\3ABase.h">
+      <Filter>DataModel</Filter>
+    </ClInclude>
+    <ClInclude Include="DataBase\SQLite\sqlite3ext.h">
       <Filter>DataBase\SQLite</Filter>
     </ClInclude>
   </ItemGroup>
@@ -142,6 +145,9 @@
     </ClCompile>
     <ClCompile Include="DataBase\SQLite\SQLOperator.cpp">
       <Filter>DataBase\SQLite</Filter>
+    </ClCompile>
+    <ClCompile Include="DataModel\3ABase.cpp">
+      <Filter>DataModel</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

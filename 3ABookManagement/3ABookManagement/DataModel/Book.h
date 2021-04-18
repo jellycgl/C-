@@ -11,21 +11,21 @@ public:
 	~CBook();
 
 public:
-	int GetBookType() { return m_nType; }
-	string GetBookID() { return m_strID; }
-	string GetBookName() { return m_strName; }
-	string GetBookNote() { return m_strNote; }
-	string GetBookPublish() { return m_strPublish; }
-	string GetBookMemberID() { return m_strMemberID; }
-	double GetBookCost() { return m_dCost; }
-	double GetBookPrice() { return m_dPrice; }
-	double GetBookProfit() { return m_dProfit; }
-	double GetBookDiscount() { return m_dDiscount; }
-	double GetBookOverAmount() { return m_dOverAmount; }
-	time_t GetBookSaleTime() { return m_tmSale; }
-	time_t GetBookBorrowTime() { return m_tmBorrow; }
-	time_t GetBookReturnTime() { return m_tmReturn; }
-	time_t GetBookOverBorrowTime() { return m_tmOverBorrow; }
+	int GetBookType() const { return m_nType; }
+	string GetBookID() const { return m_strID; }
+	string GetBookName() const { return m_strName; }
+	string GetBookNote() const { return m_strNote; }
+	string GetBookPublish() const { return m_strPublish; }
+	string GetBookMemberID() const { return m_strMemberID; }
+	double GetBookCost() const { return m_dCost; }
+	double GetBookPrice() const { return m_dPrice; }
+	double GetBookProfit() const { return m_dProfit; }
+	double GetBookDiscount() const { return m_dDiscount; }
+	double GetBookOverAmount() const { return m_dOverAmount; }
+	time_t GetBookSaleTime() const { return m_tmSale; }
+	time_t GetBookBorrowTime() const { return m_tmBorrow; }
+	time_t GetBookReturnTime() const { return m_tmReturn; }
+	time_t GetBookOverBorrowTime() const { return m_tmOverBorrow; }
 
 	void SetBookType(int nType);
 	void SetBookID(const string & strID);

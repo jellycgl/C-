@@ -17,11 +17,11 @@ public:
 	~CUser();
 
 public:
-	int GetUserID() { return m_nID; }
-	int GetUserRole() { return m_nRole; }
-	string GetUserName() { return m_strName; }
-	string GetUserPassword() { return m_strPassword; }
-	string GetUserHeadPicture() { return m_strHeadPic; }
+	int GetUserID() const { return m_nID; }
+	int GetUserRole() const { return m_nRole; }
+	string GetUserName() const { return m_strName; }
+	string GetUserPassword() const { return m_strPassword; }
+	string GetUserHeadPicture() const { return m_strHeadPic; }
 
 	bool SetUserID(int nID);
 	bool SetUserRole(int nRole);

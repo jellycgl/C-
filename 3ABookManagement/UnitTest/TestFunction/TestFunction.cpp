@@ -1,5 +1,42 @@
 #include "pch.h"
 #include "TestFunction.h"
+#include "..\TestedFiles\sqlite3.h"  
+
+sqlite3 * pDB = NULL;
+
+void TestSqlite3()
+{
+	int nRes = sqlite3_open("D:\\sqlite\\test.db", &pDB);
+	if (nRes != SQLITE_OK)
+	{
+		cout << "Open database fail: " << sqlite3_errmsg(pDB);
+	}
+
+	if (!AddUser("zhao", "18")
+		|| !AddUser("qian", "19")
+		|| !AddUser("sun", "20")
+		|| !AddUser("li", "21"))
+	{
+		cout << "add user fail";
+	}
+
+	if (!DeleteUser("zhao"))
+	{
+		cout << "delete user fail";
+	}
+
+	if (!ModifyUser("sun", "15"))
+	{
+		cout << "modify user fail";
+	}
+
+	if (!SelectUser())
+	{
+		cout << "select user fail";
+	}
+
+	sqlite3_close(pDB);
+}
 
 bool AddUser(const string& sName, const string& sAge)
 {

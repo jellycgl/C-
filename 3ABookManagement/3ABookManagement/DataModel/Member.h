@@ -12,14 +12,14 @@ public:
 	~CMember();
 
 public:
-	int GetID() { return m_nID; }
-	string GetName() { return m_strName; }
-	string GetAddress() { return m_strAddress; }
-	string GetPhoneNumber() { return m_strPhoneNumber; }
-	string GetEmail() { return m_strEmail; }
-	string GetHeadPicture() { return m_strHeadPic; }
-	double GetDeposit() { return m_dDeposit; }
-	double GetBalance() { return m_dBalance; }
+	int GetID() const { return m_nID; }
+	string GetName() const { return m_strName; }
+	string GetAddress() const { return m_strAddress; }
+	string GetPhoneNumber() const { return m_strPhoneNumber; }
+	string GetEmail() const { return m_strEmail; }
+	string GetHeadPicture() const { return m_strHeadPic; }
+	double GetDeposit() const { return m_dDeposit; }
+	double GetBalance() const { return m_dBalance; }
 	const set<string> & GetUserBooks() { return m_setBooks; }
 
 	bool SetMemberID(int nID);

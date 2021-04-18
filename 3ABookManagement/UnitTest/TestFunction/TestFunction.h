@@ -1,10 +1,11 @@
 #pragma once
 
-#include "..\TestedFiles\sqlite3.h"  
-#include <iostream>  
+#include <string>
+#include <iostream>
+
 using namespace std;
 
-sqlite3 * pDB = NULL;
+void TestSqlite3();
 
 bool AddUser(const string& sName, const string& sAge);
  

@@ -197,6 +197,7 @@
     <ClInclude Include="DataManager\BookManager.h" />
     <ClInclude Include="DataManager\MemberManager.h" />
     <ClInclude Include="DataManager\UserManager.h" />
+    <ClInclude Include="DataModel\3ABase.h" />
     <ClInclude Include="DataModel\Book.h" />
     <ClInclude Include="DataModel\Member.h" />
     <ClInclude Include="DataModel\User.h" />
@@ -217,6 +218,7 @@
     <ClCompile Include="DataManager\BookManager.cpp" />
     <ClCompile Include="DataManager\MemberManager.cpp" />
     <ClCompile Include="DataManager\UserManager.cpp" />
+    <ClCompile Include="DataModel\3ABase.cpp" />
     <ClCompile Include="DataModel\Book.cpp" />
     <ClCompile Include="DataModel\Member.cpp" />
     <ClCompile Include="DataModel\User.cpp" />
