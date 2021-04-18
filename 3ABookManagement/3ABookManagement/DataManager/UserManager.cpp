@@ -1,6 +1,6 @@
 #include "stdafx.h"
 #include "UserManager.h"
-
+#include "..\..\Tools\jsoncpp\include\json\json.h"
 
 CUserManager & CUserManager::GetInstance()
 {

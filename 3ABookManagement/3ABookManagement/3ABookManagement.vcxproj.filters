@@ -31,6 +31,12 @@
     <Filter Include="DataBase\SQLite">
       <UniqueIdentifier>{70730e77-d13b-4e39-9836-5144c344750e}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Tools">
+      <UniqueIdentifier>{33b5b6f9-d5a9-44b5-9825-94b0ef352c62}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Tools\jsoncpp">
+      <UniqueIdentifier>{04e1576b-fc63-428d-bd16-8fd971a68109}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="3ABookManagement.h">
@@ -96,6 +102,39 @@
     <ClInclude Include="DataBase\SQLite\sqlite3ext.h">
       <Filter>DataBase\SQLite</Filter>
     </ClInclude>
+    <ClInclude Include="..\Tools\jsoncpp\include\json\allocator.h">
+      <Filter>Tools\jsoncpp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Tools\jsoncpp\include\json\assertions.h">
+      <Filter>Tools\jsoncpp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Tools\jsoncpp\include\json\config.h">
+      <Filter>Tools\jsoncpp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Tools\jsoncpp\include\json\forwards.h">
+      <Filter>Tools\jsoncpp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Tools\jsoncpp\include\json\json.h">
+      <Filter>Tools\jsoncpp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Tools\jsoncpp\include\json\json_features.h">
+      <Filter>Tools\jsoncpp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Tools\jsoncpp\src\lib_json\json_tool.h">
+      <Filter>Tools\jsoncpp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Tools\jsoncpp\include\json\reader.h">
+      <Filter>Tools\jsoncpp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Tools\jsoncpp\include\json\value.h">
+      <Filter>Tools\jsoncpp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Tools\jsoncpp\include\json\version.h">
+      <Filter>Tools\jsoncpp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Tools\jsoncpp\include\json\writer.h">
+      <Filter>Tools\jsoncpp</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="3ABookManagement.cpp">
@@ -148,6 +187,15 @@
     </ClCompile>
     <ClCompile Include="DataModel\3ABase.cpp">
       <Filter>DataModel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Tools\jsoncpp\src\lib_json\json_reader.cpp">
+      <Filter>Tools\jsoncpp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Tools\jsoncpp\src\lib_json\json_value.cpp">
+      <Filter>Tools\jsoncpp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Tools\jsoncpp\src\lib_json\json_writer.cpp">
+      <Filter>Tools\jsoncpp</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

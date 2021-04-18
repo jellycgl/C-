@@ -79,6 +79,7 @@
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
+    <IncludePath>E:\Project\CPP\3ABookManagement\Tools\jsoncpp\include;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
@@ -184,6 +185,17 @@
     </ResourceCompile>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="..\Tools\jsoncpp\include\json\allocator.h" />
+    <ClInclude Include="..\Tools\jsoncpp\include\json\assertions.h" />
+    <ClInclude Include="..\Tools\jsoncpp\include\json\config.h" />
+    <ClInclude Include="..\Tools\jsoncpp\include\json\forwards.h" />
+    <ClInclude Include="..\Tools\jsoncpp\include\json\json.h" />
+    <ClInclude Include="..\Tools\jsoncpp\include\json\json_features.h" />
+    <ClInclude Include="..\Tools\jsoncpp\include\json\reader.h" />
+    <ClInclude Include="..\Tools\jsoncpp\include\json\value.h" />
+    <ClInclude Include="..\Tools\jsoncpp\include\json\version.h" />
+    <ClInclude Include="..\Tools\jsoncpp\include\json\writer.h" />
+    <ClInclude Include="..\Tools\jsoncpp\src\lib_json\json_tool.h" />
     <ClInclude Include="3ABookManagement.h" />
     <ClInclude Include="3ABookManagementDoc.h" />
     <ClInclude Include="3ABookManagementView.h" />
@@ -207,6 +219,9 @@
     <ClInclude Include="targetver.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="..\Tools\jsoncpp\src\lib_json\json_reader.cpp" />
+    <ClCompile Include="..\Tools\jsoncpp\src\lib_json\json_value.cpp" />
+    <ClCompile Include="..\Tools\jsoncpp\src\lib_json\json_writer.cpp" />
     <ClCompile Include="3ABookManagement.cpp" />
     <ClCompile Include="3ABookManagementDoc.cpp" />
     <ClCompile Include="3ABookManagementView.cpp" />
